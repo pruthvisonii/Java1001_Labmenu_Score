@@ -1,0 +1,87 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.JAV1001LabScorekeeper" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_200</item>
+        <item name="colorPrimaryVariant">@color/primary_500</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <!--Styles for TextView-->
+        <item name="android:textViewStyle">@style/AllText</item>
+        <!--Styles for RadioButtons-->
+        <item name="radioButtonStyle">@style/AllRadioButtonStyle</item>
+        <!--Styles for Buttons-->
+        <item name="materialButtonStyle">@style/ButtonStyle</item>
+    </style>
+
+    <!-- Below are the Text View Styles-->
+    <!--These styles are given for all text view    -->
+    <style name="AllText" parent="Widget.AppCompat.TextView">
+        <item name = "android:textAlignment">center</item>
+        <item name = "android:textAllCaps">true</item>
+        <item name = "android:textColor">@color/white</item>
+        <item name = "android:textSize">20sp</item>
+        <item name = "android:textStyle">normal</item>
+    </style>
+
+    <!-- This Style is for title -->
+    <style name="AllText.TitleStyle">
+        <item name = "android:textColor">@color/TitleColor_dark</item>
+        <item name = "android:textSize">34sp</item>
+        <item name = "android:textStyle">bold</item>
+    </style>
+
+    <!-- This style is for the score of both teams   -->
+    <style name="AllText.ScoreText">
+        <item name = "android:textSize">16sp</item>
+    </style>
+
+
+    <!-- Below are the RadioButton Styles-->
+    <!--  These styles are applied to all radiobutton  -->
+    <style name="AllRadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:buttonTint">@color/RadioButtonColour_dark</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--  This style is applied to the wicket radio button - to indicate that it works differently -->
+    <style name="AllRadioButtonStyle.RadioButtonWicket">
+        <item name="android:buttonTint">@color/RadioButtonWicket_dark</item>
+    </style>
+
+    <!--  Below are Button Styles-->
+    <!-- These styles are applied to all buttons   -->
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">20sp</item>
+        <item name="rippleColor">@color/white</item>
+    </style>
+
+    <!-- This style is for score reduce button for both teams -->
+    <style name="ButtonStyle.ReduceButton">
+        <item name="android:backgroundTint">@color/red_button_dark</item>
+    </style>
+    <!-- This style is for score increase button for both teams -->
+    <style name="ButtonStyle.IncreaseButton">
+        <item name="android:backgroundTint">@color/green_button_dark</item>
+    </style>
+    <!-- This style is for new game button -->
+    <style name="ButtonStyle.NewGameButton">
+        <item name="android:backgroundTint">@color/new_game_button_dark</item>
+    </style>
+
+    <!-- These are some additional styling on the linear layouts around both teams -->
+    <!-- Styling for team one-->
+    <style name="TeamOneBackground">
+        <item name="android:background">@color/team_one_dark</item>
+    </style>
+    <!-- Styling for team two-->
+    <style name="TeamTwoBackground">
+        <item name="android:background">@color/team_two_dark</item>
+    </style>
+</resources>

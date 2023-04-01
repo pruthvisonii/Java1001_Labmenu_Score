@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!-- Using Scroll view-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <!-- Using vertical linear layout to arrange the elements-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Space from top of the screen-->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <!-- Title of the app-->
+
+            <!-- Spacing between the title and the team names-->
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/AllText.TitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Title"
+                tools:text="@string/Title" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <!-- using horizontal linear layouts to arrange teams-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- space from left side of screen-->
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <!--Using vertical linear layouts to arrange team name and score and score control-->
+                <LinearLayout
+                    style="@style/TeamOneBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--Team one name-->
+                    <TextView
+                        android:id="@+id/TeamName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/TeamName1"
+                        tools:text="@string/TeamName1" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp" />
+                    <!--Using horizontal linear layout to arrange scoring control buttons and score-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <!-- Score reduce-->
+                        <Button
+                            android:id="@+id/TeamOneReduce"
+                            style="@style/ButtonStyle.ReduceButton"
+                            android:layout_width="48dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ScoreReduce"
+                            tools:text="@string/ScoreReduce" />
+                        <!-- Space between score reduce button and score of team one-->
+                        <Space
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                        <!--Team one score-->
+
+                        <!--space between score of team one and score increase button -->
+                        <TextView
+                            android:id="@+id/TeamOneScore"
+                            style="@style/AllText.ScoreText"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/StartScore"
+                            tools:text="@string/StartScore" />
+
+                        <Space
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                        <!--score increase-->
+                        <Button
+                            android:id="@+id/TeamOneIncrease"
+                            style="@style/ButtonStyle.IncreaseButton"
+                            android:layout_width="48dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ScoreIncrease"
+                            tools:text="@string/ScoreIncrease" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--Space between Team one and Team two elements-->
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <!--Vertical linear layout to arrange team two name, score controls and score              -->
+                <LinearLayout
+                    style="@style/TeamTwoBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--Team two name-->
+                    <TextView
+                        android:id="@+id/TeamName2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/TeamName2"
+                        tools:text="@string/TeamName2" />
+                    <!--Space between team two name and score control & score-->
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp" />
+                    <!--horizontal linear layout to view score and score control buttons-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <!--Score reduce-->
+                        <Button
+                            android:id="@+id/TeamTwoReduce"
+                            style="@style/ButtonStyle.ReduceButton"
+                            android:layout_width="48dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ScoreReduce"
+                            tools:text="@string/ScoreReduce" />
+                        <!--space between score reduce button and score-->
+                        <Space
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                        <!--score of team two-->
+                        <TextView
+                            android:id="@+id/TeamTwoScore"
+                            style="@style/AllText.ScoreText"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/StartScore"
+                            tools:text="@string/StartScore" />
+                        <!--space between team two score and score increase button-->
+                        <Space
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                        <!-- score increase-->
+                        <Button
+                            android:id="@+id/TeamTwoIncrease"
+                            style="@style/ButtonStyle.IncreaseButton"
+                            android:layout_width="48dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ScoreIncrease"
+                            tools:text="@string/ScoreIncrease" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!--space to left side of screen-->
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <!--Space between score area and scoring options area-->
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+            <!-- scoring options title-->
+            <TextView
+                android:id="@+id/ScoringOptionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ScoringOptions"
+                tools:text="@string/ScoringOptions" />
+
+            <!-- horizontal linear layout to centre the radio buttons-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!-- space to centre-->
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+                <!-- scoring options radiobutton group-->
+                <RadioGroup
+                    android:id="@+id/ScoringOptions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <!-- scoring options for cricket are 1,2,3,4 and 6 each radio button is assigned to each score-->
+                    <RadioButton
+                        android:id="@+id/ScoreOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/ScoreOne"
+                        tools:text="@string/ScoreOne" />
+
+                    <RadioButton
+                        android:id="@+id/ScoreTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ScoreTwo"
+                        tools:text="@string/ScoreTwo" />
+
+                    <RadioButton
+                        android:id="@+id/ScoreThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ScoreThree"
+                        tools:text="@string/ScoreThree" />
+
+                    <RadioButton
+                        android:id="@+id/ScoreFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ScoreFour"
+                        tools:text="@string/ScoreFour" />
+
+                    <RadioButton
+                        android:id="@+id/ScoreFive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ScoreFive"
+                        tools:text="@string/ScoreFive" />
+
+                    <RadioButton
+                        android:id="@+id/Wicket"
+                        style="@style/AllRadioButtonStyle.RadioButtonWicket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Wicket" />
+
+
+                </RadioGroup>
+                <!-- Space to centre-->
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/newGame"
+                    style="@style/ButtonStyle.NewGameButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/newGame"
+                    tools:text="@string/newGame" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

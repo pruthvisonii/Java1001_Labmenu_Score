@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Pruthvi_scores</string>
+    <string name="Title">Cricket Scores</string>
+    <string name="TeamName1">Team 1</string>
+    <string name="StartScore">0/0</string>
+    <string name="ScoreIncrease">+</string>
+    <string name="TeamName2">Team 2</string>
+    <string name="ScoreReduce">-</string>
+    <string name="ScoreOne">1 Run</string>
+    <string name="ScoreTwo">2 Runs</string>
+    <string name="ScoreThree">3 Runs</string>
+    <string name="ScoreFour">4 Runs</string>
+    <string name="ScoreFive">6 Runs</string>
+    <string name="ScoringOptions">Cricket Scoring Options</string>
+    <string name="Wicket">Wicket</string>
+    <string name="newGame">New Match</string>
+</resources>

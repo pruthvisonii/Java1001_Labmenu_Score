@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Colour palette for dark mode -->
+<resources>
+    <color name="TitleColor_dark">#90CAF9</color>
+    <color name="RadioButtonColour_dark">#006DB3</color>
+    <color name="RadioButtonWicket_dark">#EF5350</color>
+    <color name="primary_200">#1A237E</color>
+    <color name="primary_500">#000051</color>
+    <color name="secondary_200">#4A148C</color>
+    <color name="secondary_500">#12005E</color>
+    <color name="green_button_dark">#004d40</color>
+    <color name="red_button_dark">#9B0000</color>
+    <color name="new_game_button_dark">#00766C</color>
+    <color name="team_one_dark">#4A148C</color>
+    <color name="team_two_dark">#002171</color>
+</resources>
